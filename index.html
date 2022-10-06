@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Notes App</title>
+  </head>
+  <body>
+
+    <h1>Notes App</h1>
+    <h2>Take Notes & Never Forget</h2>
+
+    <hr class="hr-line">
+
+    <div class="form">
+
+     <div class="form-input"> 
+      <label for="search">Create Notes from here</label>
+       <div class="title-body">
+            <input id="input-text" type="text" placeholder="Input Note Title" />
+            <textarea id="input-message" placeholder="Enter Note Text"></textarea>
+       </div>
+        <button id="created-notes">Create Note</button>
+      </div>
+
+      <div class="search">
+        <label for="search">Search from here</label>
+        <input id="search-text" type="text" placeholder="Filter Notes" />
+      </div>
+
+    </div>
+  
+  <div id="notes">
+    <div id="notes1"></div>
+    <div id="notes2"></div>
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuidv4.min.js"></script>
+    <script src="./notes-funtion.js"></script>
+    <script src="./notes-app.js"></script>
+  </body>
+</html>

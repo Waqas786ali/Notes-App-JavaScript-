@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 63.5%;
+}
+
+body{
+    font-family: 'Jost', sans-serif;
+    display: flex;
+    flex-direction: column;  
+    place-items: center;
+    background-color: black;
+    transition: all .5s ease-in-out;
+    overflow-x: hidden;
+    /* color: cyan; */
+}
+
+h1{
+    font-size: 5rem;
+    color: white;
+    /* color: cyan; */
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 300;
+    color: gold;
+}
+
+h3{
+    font-size: 2.5rem;
+    color: cyan;
+    font-weight: 500;
+    /* color: gold; */
+}
+
+p{
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+a{
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+input{
+    width: 25rem;
+    height: 3rem;
+    padding: .5rem;
+    background-color: cyan;
+    color: black;
+    outline: 2px solid gold;
+    border: none;
+    font-family: 'Jost', sans-serif;
+}
+
+input:first-child{
+    width: 40rem;
+}
+
+textarea{
+    background-color: cyan;
+    width: 40rem;
+    height: 15rem;
+    padding: .5rem;
+    border: none;
+    outline: 2px solid gold;
+    font-family: 'Jost', sans-serif;
+    margin-top: .8rem;
+}
+
+#created-notes{
+    padding: .8rem 1.7rem;
+    cursor: pointer;
+    background-color: gold;
+    margin-top: 1rem;
+    font-family: 'Jost', sans-serif;
+    color: black;
+    border: 2px solid black;
+}
+
+#created-notes:hover{
+    background-color: black;
+    color: gold;
+    border: 2px solid gold;
+}
+
+/* #search-text{
+    margin-left: 35rem;
+} */
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5rem 2rem 0 2rem;
+}
+
+.form-input{
+    position: absolute;
+    top: 20rem;
+    left: 3rem;
+
+}
+
+.search{
+    display: flex;
+    flex-direction: column;
+    right: 3rem;
+    top: 20rem;
+    position: absolute;
+
+}
+
+label{
+    font-size: 1.8rem;
+    color: white;
+    position: absolute;
+    top: -3rem;
+}
+
+.title-body{
+    display: flex;
+    flex-direction: column;
+}
+
+#notes button{
+    font-size: 1.4rem;
+    padding: 0 .5rem;
+    /* margin-left: 36.8rem; */
+    position: absolute;
+    right: .1rem;
+    top: .1rem;
+    /* margin-top: -1rem; */
+    background-color: cyan;
+    /* border: none;  */
+}
+
+#notes button:hover{
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+
+#notes a{
+    font-size: 1.3rem;
+    padding: .2rem 1rem;
+    background-color: gold;
+    color: black;
+    border: 2px solid black;
+}
+
+#notes a:hover{
+    background-color: black;
+    /* color: gold; */
+    border: 2px solid gold;
+    color: gold;
+}
+.hr-line{
+    width: 100%;
+    height: .2rem;
+    background-color: cyan;
+    margin-bottom: 4rem;
+}
+
+#notes div{
+    background-color: black;
+    border-top: 3px solid gold;
+    border-bottom: 3px solid cyan;
+    border-left: 3px solid cyan;
+    border-right: 3px solid gold;
+    margin-bottom: 1rem;
+    width: 40rem;
+    position: relative;
+    padding: .4rem .7rem .7rem .5rem;
+
+    /* height: 10rem; */
+    overflow-x: scroll;
+}
+
+/* //------------------------------------ Scroll Editing */
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 3px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black;
+    
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: white;
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
